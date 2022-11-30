@@ -1,0 +1,65 @@
+<!---Aquest HTML és un formulari-->
+<html>
+    <head>
+<!--En aquest apartat hem connectat l'HTML amb un CSS External-->
+<!--A més de posar el nom de la pàgina-->
+       <title>Formulari</title>
+       <link rel="stylesheet" href="style_formulari.css">
+    </head>
+    <body>
+<!--En el body està tot el formulari incloent-hi els headings-->
+
+    <h1 class="h1">El meu primer Formulari</h1>
+    <h5 class="h5">Les  teves dades personals</h5>
+
+      <form action="resultat.html" class="form1">
+<!--En aquest apartat s'ha de posar Nom, Cognom i Edat-->
+        <label for="fname">Nom:</label>
+        <input class="input1" type="text" id="fname" name="fname">
+        <label for="lname">Cognom:</label>
+        <input class="input1" type="text" id="lname" name="lname"><br>
+        <br>  
+        <label for="lname">Edat:</label>
+        <input class="input2" type="number" id="lname" name="lname">
+      
+
+        <h5 class="h5">Marca els llenguatges de programació que més t'agraden:</h5>
+
+<!--Aquí, està la selecció de llenguatges de programació tals com l'HTML, CSS I XML-->
+        <input type="checkbox" id="vehicle1" name="vehicle1">
+        <label for="vehicle1"> HTML</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2">
+        <label for="vehicle2"> CSS</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3">
+        <label for="vehicle3"> XML</label>
+      
+    
+        <h5 class="h5">Selecciona el cicle formatiu que vols cursar:</h5>
+        <h4 class="h4">Selecciona el cicle</h4>
+
+<!--Aquest apartat conté els cursos que volem cursar com són ASIX, DAM i DAW-->
+          <input type="radio" id="html" name="fav_language">
+          <label for="html">ASIX</label><br>
+          <input type="radio" id="css" name="fav_language">
+          <label for="css">DAM</label><br>
+          <input type="radio" id="javascript" name="fav_language">
+          <label for="javascript">DAW</label><br><br>
+      
+      
+      
+        <label for="curs">Selecciona el curs</label>
+<!--La selecció del curs a realitzar-->
+        <select>
+            <option>Primer</option>
+            <option>Segon</option>
+        </select>
+      
+
+        <h4 class="h4">Observacions:</h4>
+<!--Alguna observació a fer, per si volem escriure-hi alguna-->
+        <textarea rows="10" cols="50">Escriu el teu missatge</textarea><br>
+<!--Per últim, el botó submit per redireccionar a una altra Pàgina HTMK-->     
+        <input class="submit" type="submit" value="Submit">
+      </form>
+    </body>
+</html>       
